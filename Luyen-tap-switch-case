@@ -25,6 +25,7 @@
                 ket_qua_1.innerText='Số Ngày : 31 ngày'+'';
                 break;
             case 2:
+                ket_qua_1.innerText='Số Ngày : 28 ngày'+'';
             case 4:
             case 6:
             case 8:

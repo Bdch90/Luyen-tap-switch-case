@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su kien chuot</title>
+</head>
+<body>
+<form>
+    <input type = 'number' id = "thang"  style="height:30px"/>
+    <input type = 'button' onclick = 'soNgay()' value ='Tính số ngày' style="height:35px"/>
+    <h2 id = 'ket_qua'> Số Ngày :</h2>
+</form>
+<script>
+
+    function soNgay() {
+        var so_thang = parseInt(document.getElementById('thang').value);
+        var ket_qua_1=document.getElementById('ket_qua');
+        switch (so_thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:
+            case 11:
+                ket_qua_1.innerText='Số Ngày : 31 ngày'+'';
+                break;
+            case 2:
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+            case 12:
+                ket_qua_1.innerText='Số Ngày : 30 ngày'+'';
+                break;
+            default:
+                ket_qua_1.innerText='Tháng nhập không chính xác';
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>
